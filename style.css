@@ -15,7 +15,7 @@ body > div {
 #image {
   height: 100vh;
   flex: 3;
-  background-image: url(images/image3.jpg);
+  background-image: url(./images/image3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: full;
@@ -96,4 +96,9 @@ h3 {
   padding-left: 20px;
   margin: 30px;
   color: #156e82;
+}
+
+input:active {
+  color: aquamarine;
+  outline: none;
 }
