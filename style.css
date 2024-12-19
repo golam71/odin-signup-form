@@ -53,7 +53,9 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
+#image h1 {
+  font-family: "Inconsolata", serif;
+}
 form {
   color: white;
   /* width: 500px; */
@@ -61,15 +63,6 @@ form {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  font-size: 20px;
-}
-
-input {
-  padding: 7px;
-  margin: 10px;
-  border-radius: 4px;
-  background-color: #ddecee;
-  border: none;
   font-size: 20px;
 }
 
@@ -89,8 +82,15 @@ button {
   background-color: #151c27;
   border: none;
   font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 0 auto;
 }
 
+button:hover {
+  background-color: #151c27d8;
+}
 h3 {
   padding-right: 20px;
   padding-left: 20px;
@@ -98,7 +98,28 @@ h3 {
   color: #156e82;
 }
 
-input:active {
-  color: aquamarine;
-  outline: none;
+input {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #ddecee;
+  border: 2px solid transparent;
+  font-size: 24px;
+}
+
+input:focus {
+  outline: #151c27 2px solid;
+  box-shadow: 0 0 7px rgba(0, 0, 255, 0.8);
+}
+
+/* Suppress invalid styles while the input is focused */
+input:focus:invalid {
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+
+/* Apply invalid styles only after the user leaves the input */
+input:invalid:not(:focus) {
+  border: 2px solid red;
+  box-shadow: 0 0 7px rgb(255, 0, 0);
 }
