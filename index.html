@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Project Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div ></div>
-    <div></div>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="image">
+      <div id="text-container">
+        <img src="images/odin-lined.png" alt="Odin Image" />
+        <h1>ODIN</h1>
+      </div>
+    </div>
+    <div id="form-container">
+      <h1>Explore City Life</h1>
+      <h3>
+        City is a canvas painted by time and human hands, and its tourism is the
+        brushstroke of our fleeting presence, adding a layer to its
+        ever-changing narrative.
+      </h3>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Enter travel data</legend>
+          <div>
+            <label for="first-name"> First Name : </label>
+            <input type="text" id="first-name" />
+
+            <label for="email"> Email : </label>
+            <input type="email" id="email" />
+
+            <label for="password-first-entry"> Password : </label>
+            <input type="password" id="password-first-entry" />
+          </div>
+          <div>
+            <label for="last-name"> Last Name : </label>
+            <input type="text" id="last-name" />
+
+            <label for="phone-number"> Phone Number : </label>
+            <input type="tel" id="phone-number" />
+
+            <label for="password-second-entry"> Confirm Password : </label>
+            <input type="password" id="password-second-entry" />
+          </div>
+        </fieldset>
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
 </html>

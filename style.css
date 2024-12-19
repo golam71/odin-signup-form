@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+body > div {
+  flex: 5;
+  /* height: 100vh; */
+}
+
+#image {
+  height: 100vh;
+  flex: 3;
+  background-image: url(images/image3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: full;
+  color: white;
+}
+
+#text-container {
+  margin-top: 150px;
+  justify-content: center;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+img {
+  height: 100px;
+}
+
+/* part of the layout and image is done and now forms */
+
+#form-container {
+  padding-top: 30px;
+  /* background-color: #94cddd; */
+  background: rgb(148, 205, 221);
+  background: radial-gradient(
+    circle,
+    rgba(148, 205, 221, 1) 0%,
+    rgb(202, 240, 245) 90%
+  );
+  color: #151c27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  color: white;
+  /* width: 500px; */
+  background-color: #156e82;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #ddecee;
+  border: none;
+  font-size: 20px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 10px;
+  color: aliceblue;
+  background-color: #151c27;
+  border: none;
+  font-size: 20px;
+}
+
+h3 {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 30px;
+  color: #156e82;
+}
