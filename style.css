@@ -112,14 +112,7 @@ input:focus {
   box-shadow: 0 0 7px rgba(0, 0, 255, 0.8);
 }
 
-/* Suppress invalid styles while the input is focused */
-input:focus:invalid {
-  border: 2px solid transparent;
-  box-shadow: none;
-}
 
-/* Apply invalid styles only after the user leaves the input */
-input:invalid:not(:focus) {
+input:user-invalid {
   border: 2px solid red;
-  box-shadow: 0 0 7px rgb(255, 0, 0);
 }
